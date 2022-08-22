@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/design/cb-fav20.jpg">
+    <link rel="stylesheet" href="src/style/main.css">
+    <title>CrankyBicycle</title>
+</head>
+<body>
+    <header class="header_container">
+        <div class="logo_navbar">
+            <div class="logo">
+                <img src="media/design/CBLOGO.png" alt="LOGO">
+            </div>
+
+            <img id="mobile-btn" class="mobile-menu" src="./media/design/menu.svg" alt="Open navigation">
+
+            <div class="navbar">
+                <img id="mobile-exit" class="mobile-menu-exit" src="./media/design/exit.svg" alt="Close navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="src/pages/crankybicycle.html">CrankyBicycle</a></li>
+                    <li><a href="src/pages/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main_container">
+        <video class="home_video" src="media/design/introwix.mp4" autoplay loop muted style="height:100%">
+            Your browser does not support the video tag.
+        </video>
+        <h1 class="video_content">CrankyBicycle</h1>
+    </main>
+    <footer class="footer_container_home">
+        <p>&copy; 2022 <a href="#">Verners Grzibovskis</a></p>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-btn')
+         nav = document.querySelector('.navbar')
+         mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+    
+</body>
+</html>

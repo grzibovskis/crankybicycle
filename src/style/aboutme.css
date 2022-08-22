@@ -1,0 +1,124 @@
+main > h1 {
+    font-family: var(--jockey);
+    text-align: end;
+    margin: 1em 4em 1em 0;
+    font-size: 4vw;
+}
+
+.aboutme_main_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 3em;
+}
+
+.about_me {
+    width: 80%;
+    margin: 1em 0 2em 4em;
+}
+
+.contact_me {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 4em 0 4em 4em;
+}
+.contact_me_image > img {
+    width: 200px;
+    height: 200px;
+}
+.contact_title {
+    font-family: var(--jockey);
+    transform: rotate(-10deg);
+}
+.social_bar {
+    margin-top: 3em;
+}
+.social_bar ul li a {
+    margin: 0 0.5em 0 0.5em;
+}
+
+.about_container_two div img{
+    
+    margin: 7em auto 2em;
+    display: block;
+}
+.tourist_title h3 {
+    text-align: center;
+    font-family: var(--jockey);
+}
+.tourist_title p {
+    text-align: center;
+    margin: 1em 0 3em 0;
+}
+
+.tourist_p {
+    width: 80%;
+    margin: 1em 0 2em 4em;
+}
+.social_bar_second {
+    display: none;
+}
+
+
+/* ================================== Small-Meduim ================================*/
+
+@media only screen and (max-width: 1150px) {
+    .social_bar_second {
+        margin: 5em auto;
+        margin-top: 3em;
+        display: block;
+    }
+    .social_bar_second ul {
+        text-align: center;
+        margin-right: 0;
+    }
+    .social_bar_second ul li a {
+        margin: 0 0.5em 0 0.5em;
+    }
+    .social_bar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 966px) {
+
+
+    .aboutme_main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 3em;
+        
+    }
+
+    .contact_me {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 40%;
+        margin: 5em auto;
+    }
+    .social_bar {
+        display: none;
+    }
+    .social_bar ul li a {
+        margin: 0 0.5em 0 0.5em;
+    }
+    .about_container_one {
+        width: 100%;
+        margin: 0;
+        padding: 0 2em;
+        border-bottom: 1px solid var(--dark);
+    }
+    .about_me {
+        width: 80%;
+        margin: 3em 0 0 0;
+    }
+
+    .social_bar_second {
+        margin: 5em auto;
+        margin-top: 3em;
+        display: block;
+    }
+    .social_bar_second ul li a {
+        margin: 0 0.5em 0 0.5em;
+    }
+
+}

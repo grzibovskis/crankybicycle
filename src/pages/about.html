@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../media/design/cb-fav20.jpg">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>About me | CrankyBicycle</title>
+</head>
+<body>
+    <header class="header_container">
+        <div class="logo_navbar">
+            <div class="logo">
+                <img src="/media/design/CBLOGO.png" alt="LOGO">
+            </div>
+
+            <img id="mobile-btn" class="mobile-menu" src="../../media/design/menu.svg" alt="Open navigation">
+
+            <nav class="navbar">
+                <img id="mobile-exit" class="mobile-menu-exit" src="../../media/design/exit.svg" alt="Close navigation">
+                <ul>
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="crankybicycle.html">CrankyBicycle</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Cranky bicycle</h1>
+
+        <div class="aboutme_main_container">
+            
+            <div class="about_container_one">
+                <p class="about_me">
+                    A Guy who restores old bicycles.
+                    <br><br>
+                    My name is Verners and i bought my first old bicycle in 2020 (55€). I bought some spare parts and i restored it. It gave me a pleasant feeling to bring back in life something old and forgotten. So i kept going.<br><br>
+                    I can’t say im expert in this, but it's not rocket science. So i made crankybicycle to share my experience, to help you with tips and tricks, to motivate you.<br><br>
+                    If you have an interesting restoration story, please feel free to share it with me.
+                </p>
+                <div class="contact_me">
+                    <div class="contact_me_image">
+                        <img src="../../media/me.png" alt="Portrait image" >
+                    </div>
+                    <div class="social_bar">
+                        <h2 class="contact_title">MORE :</h2>
+                        <ul>
+                            <li><a href="https://www.instagram.com/crankybicycle/" target="_blank"><img src="../../media/social/instagram.png" alt="Instagram" style="width:40px;height:40px;"></a></li>
+                            <li><a href="https://www.facebook.com/Crankybicycle" target="_blank"><img src="../../media/social/facebook.png" alt="Facebook" style="width:40px;height:40px;"></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=D2FCoOj5HXI" target="_blank"><img src="../../media/social/youtube.png" alt="Youtube" style="width:40px;height:40px;"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="about_container_two">
+                <div>
+                    <img src="../../media/bike_tourist.jpg" alt="Bike Tourist" style="width:337px;height:225px;">
+                </div>
+                <div class="tourist_title">
+                    <h3>The Tourist</h3>
+                    <p>(My original bike)</p>
+                </div>
+                <div class="tourist_p">
+                    <p>
+                        This was one of the most elitist models in the whole of the Soviet Union. Its owners were fast and envied.
+                        The Tourist was designed for long cross-country rides. It had bent steering handles: although they resembled the horns of a ram, it placed the rider in a position that was best suited for fast and long rides, in terms of aerodynamics.
+                        One of the most notable features of this model was its revolutionary gear system that allowed for selecting between one of the four gears depending on the rider’s speed.
+                        Plus, the bicycle came with a stylish leather bag for keeping tools underneath the seat. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social_bar_second">
+            <ul>
+                <li><a href="https://www.instagram.com/crankybicycle/" target="_blank"><img src="../../media/social/instagram.png" alt="Instagram" style="width:40px;height:40px;"></a></li>
+                <li><a href="https://www.facebook.com/Crankybicycle" target="_blank"><img src="../../media/social/facebook.png" alt="Facebook" style="width:40px;height:40px;"></a></li>
+                <li><a href="https://www.youtube.com/watch?v=D2FCoOj5HXI" target="_blank"><img src="../../media/social/youtube.png" alt="Youtube" style="width:40px;height:40px;"></a></li>
+            </ul>
+        </div>
+
+    </main>
+    <footer class="footer_container">
+        <p>&copy; 2022 Verners Grzibovskis</p>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-btn')
+         nav = document.querySelector('.navbar')
+         mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>

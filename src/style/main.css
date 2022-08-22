@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins:wght@300;400;500;600&display=swap');
+@import "crankybicycle.css";
+@import "aboutme.css";
+@import "home.css";
+
+
+* {
+    --jockey: 'Jockey One', sans-serif;
+    --yellow: #F2b10C;
+    --red: #E60000;
+    --dark: rgb(32, 32, 32);
+    --light-white: rgb(250, 250, 250);
+
+    background-color: var(--light-white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================================== Header ================================*/
+
+.header_container {
+    border-bottom: 2px solid var(--red);
+    height: 7em;
+
+}
+.logo_navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+    height: 6.8em;
+}
+.logo > img {
+    margin: 1em;
+    width: 80px;
+    height: 80px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 3em;
+    margin-right: 3em;
+}
+
+li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 2em 0 2em;
+    color: var(--dark);
+    padding: 0.5em 1em;
+    border: 1px solid var(--dark);
+    
+}
+.navbar ul li a:hover {
+    background-color: var(--dark);
+    color: var(--light-white);
+    transition: 300ms;
+}
+
+.mobile-menu, .mobile-menu-exit {
+    display: none;
+}
+
+/* ================================== Footer ================================*/
+
+
+.footer_container {
+    background-color: var(--dark);
+    box-shadow: 0px -2px 3px var(--red);
+
+
+    
+}
+.footer_container p {
+    padding: 2em 0;
+    background-color: var(--dark);
+    color: var(--light-white);
+    font-size: smaller;
+    text-align: center;
+    margin: auto;
+    width: 20%;
+}
+
+.footer_container p a {
+    background-color: var(--dark);
+    color: var(--light-white);
+    text-decoration: none;
+}
+
+/* ================================== Small-Meduim ================================*/
+
+@media only screen and (max-width: 978px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        width: 40%;
+        right: 0;
+        top: 0;
+        background: #20272e;
+        height: 100vh;
+        padding: 1em;
+    }
+
+    .navbar > ul {
+        margin-top: 5em;
+        background-color: #20272e;
+    }
+    .navbar  li {
+        background-color: #20272e;
+    }
+    .navbar ul li a {
+        background-color: #20272e;
+        border: 1px solid rgb(226, 226, 226);;
+        color: rgb(226, 226, 226);
+        display: block;
+        margin: 1em auto;
+        font-size: 1em;
+    }
+    .navbar ul li a:hover {
+        font-weight: bold;
+        background-color: #20272e;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 2.5em 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .mobile-menu-exit {
+        float: right;
+        margin: .5em;
+        cursor: pointer;
+        background-color: #20272e;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .navbar {
+        width: 66%;
+    }
+}
